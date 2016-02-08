@@ -1,12 +1,13 @@
-TakeMeTour's Job Quest
+TakeMeTour's Job Quest - Frontend Task
 ======================
-## Frontend Task
+
 Application with the tech stack listed below.
 
 - React
 - SASS
 - Webpack builds
 - ES6 syntax (Babel)
+- Support mobile screen (responsive)
 
 ### Get started
 

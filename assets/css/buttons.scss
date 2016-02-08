@@ -1,0 +1,46 @@
+@mixin button-bg($bg) {
+    background: $bg;
+
+    &:hover {
+        background:darken($bg,8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background:darken($bg,25%);
+    }
+}
+
+.btn, button {
+    background: none;
+    padding: 7px 12px 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.btn-green {
+    @include button-bg($color-light-green);
+}
+
+.btn-blue {
+    @include button-bg($color-light-blue);
+}
+
+.btn-yellow {
+    @include button-bg($color-light-yellow);
+}
+
+.btn-red {
+    @include button-bg($color-light-red);
+}

@@ -1,0 +1,133 @@
+
+.see-ins-box-1 {
+    width: 32.5%;
+}
+.see-ins-box-1:first-child {
+    margin-right: 1%;
+}
+.see-ins-box-1:last-child {
+    margin-left: 1%;
+}
+
+.see-ins-box-2 {
+    width: 66%;
+}
+
+.see-ins-box-1, .see-ins-box-2 {
+    height: 220px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #000;
+}
+
+.see-ins-box-1 .shadow, .see-ins-box-2 .shadow {
+    background: rgba(0,0,0,.12);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.see-ins-box-1 .image, .see-ins-box-2 .image {
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+.see-ins-box-1 .image, .see-ins-box-2 .image {
+    transition: .2s background-size;
+    background-size: 100%;
+}
+
+.see-ins-box-1 h2, .see-ins-box-2 h2 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    color: $color-white;
+    width: 100%;
+    z-index: 1;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.new-feature-expert h1 {
+    margin-top: 20px;
+}
+
+
+.new-feature-expert .inner a.btn {
+    margin: 20px auto;
+    background: none;
+    padding: 7px 12px 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 16px 44px;
+    color: $color-white;
+    background: $color-orange;
+}
+
+.new-feature-expert .local-wrapper {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.see-ins-box-1:hover, .see-ins-box-2:hover {
+    box-shadow: #1cb6e6 0 0 10px;
+}
+
+.new-feature-expert.inspiration-home .description {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.see-ins-box-1:hover .image, .see-ins-box-2:hover .image {
+    background-size: 107%;
+}
+
+.new-feature-expert.inspiration-home .local-wrapper .btn .icon {
+    margin-top: 0;
+}
+
+.new-feature-expert.inspiration-home .local-wrapper .btn .txt {
+    position: relative;
+    top: 4px;
+}
+
+.new-feature-expert.inspiration-home .local-wrapper .btn, .new-feature-expert.inspiration-home h1 {
+    margin-bottom: 10px;
+}
+
+.icon {
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon.inspiration-home {
+    width: 23px;
+    height: 26px;
+    background-image: url(#{$path-assets-images-icons}/inspiration-home.png);
+}
